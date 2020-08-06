@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node index.js",
     "electron-start": "electron .",
-    "electron-pack": "electron-builder -c.extraMetadata.main=electron.js"
+    "electron-pack": "electron-builder --win --macos -c.extraMetadata.main=electron.js"
   },
   "build": {
     "appId": "nonExistentID",
@@ -17,6 +17,9 @@
     ],
     "directories": {
       "buildResources": "assets"
+    },
+    "win": {
+      "target": "nsis"
     }
   },
   "keywords": [],
