@@ -2,14 +2,31 @@
   "name": "finger-organist-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "homepage": "./",
+  "main": "public/Main.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "electron-start": "electron .",
+    "electron-pack": "electron-builder -c.extraMetadata.main=public/Main.js"
+  },
+  "build": {
+    "appId": "nonExistentID",
+    "files": [
+      "public/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "electron": "^9.1.2",
+    "electron-builder": "^22.8.0"
   }
 }
