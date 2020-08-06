@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "homepage": "./",
-  "main": "public/Main.js",
+  "main": "electron.js",
   "scripts": {
     "start": "node index.js",
     "electron-start": "electron .",
-    "electron-pack": "electron-builder -c.extraMetadata.main=public/Main.js"
+    "electron-pack": "electron-builder -c.extraMetadata.main=electron.js"
   },
   "build": {
     "appId": "nonExistentID",
     "files": [
-      "public/**/*",
+      "**/*",
       "node_modules/**/*"
     ],
     "directories": {
