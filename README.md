@@ -1,6 +1,6 @@
 ## 가톨릭 성가 반주기 (데스크탑 버전)
 
-finger-organist에서 빌드한 파일을 일렉트론을 이용해서 데스크탑앱으로 바꿉니다.<br />
+[finger-organist](https://github.com/socratone/finger-organist.git)에서 빌드한 파일을 일렉트론을 이용해서 데스크탑앱으로 바꿉니다.<br />
 빌드한 파일은 포함되어 있지 않습니다.<br />
 필요한 파일은 아래와 같습니다.<br />
 
