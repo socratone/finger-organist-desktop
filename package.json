@@ -3,20 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "homepage": "./",
-  "main": "electron.js",
+  "main": "main.js",
   "scripts": {
-    "start": "node index.js",
-    "electron-start": "electron .",
-    "electron-pack": "electron-builder -c.extraMetadata.main=electron.js"
+    "start": "electron .",
+    "build": "electron-builder"
   },
   "build": {
     "appId": "nonExistentID",
-    "files": [
-      "**/*",
-      "node_modules/**/*"
-    ],
-    "directories": {
-      "buildResources": "assets"
+    "mac": {
+      "category": "your.app.category.type"
     }
   },
   "keywords": [],
